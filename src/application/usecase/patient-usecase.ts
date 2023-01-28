@@ -1,6 +1,6 @@
 import PatientRepository from 'src/domain/repository/patient-repository';
-import AddPatientResponseDto from '../model/response/addpatient-response.dto';
-import AddPatientRequestDto from '../model/request/addpatient-request.dto';
+import AddPatientResponseDto from '../dto/response/addpatient-response.dto';
+import AddPatientRequestDto from '../dto/request/addpatient-request.dto';
 import { Injectable } from '@nestjs/common';
 import PatientEntity from 'src/domain/model/patient.entity';
 
