@@ -8,8 +8,14 @@ export default class PatientEntity extends BaseEntity {
   public age: number;
   public ageUnit: string;
 
-  constructor(name: string, species: string, age: number, ageUnit: string) {
-    super();
+  constructor(
+    name: string,
+    species: string,
+    age: number,
+    ageUnit: string,
+    id?: string,
+  ) {
+    super(id);
 
     if (!name) {
       throw new ArgumentEmptyError('name');
