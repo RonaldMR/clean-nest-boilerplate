@@ -15,7 +15,7 @@ export default class PatientUseCase {
   ): Promise<AddPatientResponseDto> {
     const patient = new PatientEntity(
       request.name,
-      request.species,
+      undefined,
       request.age,
       request.ageUnit,
     );
